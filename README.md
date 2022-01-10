@@ -1,2 +1,4 @@
-# CABSdock protein-peptide-global-docking-evaluation
-During global docking simulation (CABSdock in this study) the search for the receptor–peptide binding mode is limited to the broad area of protein surface. Thus a local docking tool (ADCP in this study) was used to refine the binding mode prediction based on top-scored binding interface from CABSdock.
+# CABSdock protein-peptide global docking evaluation
+CABS-dock standalone is a multiplatform Python package for protein–peptide docking with backbone flexibility. This python script is used to measure the IL-RMSD (RMSD of the ligand in the interface) proposed in Journal of Chemical Theory and Computation 2020 16 (6), 3959-3969, and the proportion of interface residues that was predicted correctly.
+
+IL_RMSD was calculated on the basis of the backbone atoms of the peptide residues within 10 Å from the protein after the optimal superimposition of the protein residues within 10 Å from the peptide.
